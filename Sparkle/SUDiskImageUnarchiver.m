@@ -50,6 +50,9 @@
         dispatch_block_t delegateSuccess = ^{
             [self notifyDelegateOfSuccess];
         };
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 		do
 		{
             // Using NSUUID would make creating UUIDs be done in Cocoa,
@@ -66,6 +69,7 @@
             }
 		}
 		while (noErr == FSPathMakeRefWithOptions((const UInt8 *)[mountPoint fileSystemRepresentation], kFSPathMakeRefDoNotFollowLeafSymlink, &tmpRef, NULL));
+#pragma clang diagnostic pop
 
         NSData *promptData = nil;
         promptData = [NSData dataWithBytes:"yes\n" length:4];
