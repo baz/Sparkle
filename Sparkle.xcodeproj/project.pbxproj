@@ -2490,7 +2490,7 @@
 			attributes = {
 				CLASSPREFIX = SU;
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Sparkle Project";
 				TargetAttributes = {
 					612279D80DB5470200AB99EA = {
@@ -2524,13 +2524,13 @@
 					};
 					726E07AC1CAF08D6001A286B = {
 						CreatedOnToolsVersion = 7.3;
-				};
+					};
 					726E07EE1CAF37BD001A286B = {
 						CreatedOnToolsVersion = 7.3;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
-			};
+							};
 						};
 					};
 					726E4A151C86C88F00C57C6A = {
